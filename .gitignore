@@ -1,0 +1,28 @@
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+node_modules
+
+# IDEs
+.idea
+*.iml
+.scala_dependencies
+.worksheet
+.classpath
+.project
+.settings/
+
+# Ensime
+.ensime
+.ensime_cache
+/bin/
+
+# OS X
+.DS_Store

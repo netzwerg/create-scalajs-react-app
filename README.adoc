@@ -1,0 +1,7 @@
+A Scala.js project skeleton based on:
+
+* https://github.com/japgolly/scalajs-react[scalajs-react] (Facebook's React on Scala.js)
+* https://github.com/suzaku-io/diode[diode] (application state management similar to Elm or Redux)
+* http://www.scala-sbt.org[sbt] (interactive build tool)
+* http://get-coursier.io[coursier] (pure Scala Artifact Fetching)
+* http://www.scalatest.org/[ScalaTest]

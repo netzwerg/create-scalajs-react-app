@@ -1,3 +1,3 @@
 package ch.netzwerg.example.counter
 
-case class CounterModel(counter: Int)
+case class CounterModel(previousCounter: Int, currentCounter: Int)

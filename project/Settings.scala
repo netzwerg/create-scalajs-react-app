@@ -18,6 +18,7 @@ object Settings {
     // libraryDependencies
     val scalaJsReact = "0.11.3"
     val diode = "1.1.1"
+    val d3 = "0.3.4"
 
     // libraryDependencies (test)
     val scalaTest = "3.0.0"
@@ -31,6 +32,7 @@ object Settings {
     "com.github.japgolly.scalajs-react" %%% "core" % versions.scalaJsReact,
     "io.suzaku" %%% "diode" % versions.diode,
     "io.suzaku" %%% "diode-react" % versions.diode,
+    "org.singlespaced" %%% "scalajs-d3" % versions.d3,
 
     // test
     "org.scalatest" %%% "scalatest" % versions.scalaTest % "test"

@@ -9,8 +9,8 @@ case object Decrement extends Action
 class CounterHandler[M](modelRW: ModelRW[M, CounterModel]) extends ActionHandler(modelRW) {
 
   override def handle = {
-    case Increment => updated(value.copy(counter = value.counter + 1))
-    case Decrement => updated(value.copy(counter = value.counter - 1))
+    case Increment => updated(value.copy(previousCounter = value.currentCounter, currentCounter = value.currentCounter + 10))
+    case Decrement => updated(value.copy(previousCounter = value.currentCounter, currentCounter = value.currentCounter - 10))
   }
 
 }

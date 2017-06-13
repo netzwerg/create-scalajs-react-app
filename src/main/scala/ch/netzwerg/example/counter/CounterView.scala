@@ -1,14 +1,14 @@
 package ch.netzwerg.example.counter
 
 import diode.react.ModelProxy
-import japgolly.scalajs.react.ReactComponentB
-import japgolly.scalajs.react.vdom.prefix_<^._
+import japgolly.scalajs.react._
+import japgolly.scalajs.react.vdom.html_<^._
 
 object CounterView {
 
   case class Props(modelProxy: ModelProxy[CounterModel])
 
-  private val component = ReactComponentB[Props](this.getClass.getSimpleName)
+  private val component = ScalaComponent.builder[Props](this.getClass.getSimpleName)
     .render_P { p =>
       <.div(
         <.button(^.onClick --> p.modelProxy.dispatchCB(Decrement), "-"),

@@ -13,17 +13,17 @@ object Settings {
   )
 
   object versions {
-    val scala = "2.12.1"
+    val scala = "2.12.2"
 
     // libraryDependencies
-    val scalaJsReact = "0.11.3"
-    val diode = "1.1.1"
+    val scalaJsReact = "1.0.1"
+    val diode = "1.1.2"
 
     // libraryDependencies (test)
-    val scalaTest = "3.0.0"
+    val scalaTest = "3.0.1"
 
     // jsDependencies
-    val react = "15.3.2"
+    val react = "15.5.4"
   }
 
   val libraryDependencies = Def.setting(Seq(

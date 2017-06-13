@@ -15,9 +15,7 @@ jsDependencies ++= Settings.jsDependencies.value
 // yes, we want to package JS dependencies
 skip in packageJSDependencies := false
 
-// use launcher code to start the client app (see launcher.js in index.html)
-persistLauncher := true
-persistLauncher in Test := false
+scalaJSUseMainModuleInitializer := true
 
 // make the referenced paths on source maps relative to target path
 relativeSourceMaps := true
